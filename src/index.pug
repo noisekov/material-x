@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        script(src="https://kit.fontawesome.com/c3b4e4e23e.js" crossorigin="anonymous")
+        title Document
+    body
+        section.form-elements
+            .form-elements__container
+                .form-elements_left
+                    .form-elements__text-field
+                        form.form-position(action="/")
+                            input.text-field__input(type="text" placeholder="Select industry" )
+                            a(href="#")
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    .form-elements__text-field.__header-field
+                        form.form-position(action="/") 
+                            .text-field__header  
+                                label.text-field__name(for="field-active") Industry
+                            input.text-field__input-active(type="text" id="field-active" placeholder="2 items selected")
+                            a(href="#")
+                                <i class="fa fa-caret-up" aria-hidden="true"></i> 
+                    .form-elements__menu 
+                        .menu-checked
+                            .menu-checked__form
+                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                input(type="checkbox" id="Food / beverage") 
+                                label(for="Food / beverage") Food / beverage
+                            .menu-checked__form
+                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                input(type="checkbox" id="Travel") 
+                                label(for="Travel") Travel
+                            .menu-checked__form_active-select.menu-checked__form
+                                span.background.background_active
+                                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                                input.input_active(type="checkbox" id="Automotive" checked) 
+                                .automotive_active
+                                    label(for="Automotive") Automotive
+                                    .automotive_active-select
+                                        label(for="Automotive") 1 item selected 
+                            .menu-checked__form_active-select.menu-checked__form
+                                span.background.background_active
+                                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                                input.input_active(type="checkbox" id="Education" checked) 
+                                label(for="Education") Education
+                            .menu-checked__form
+                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                input(type="checkbox" id="Goverment") 
+                                label(for="Goverment") Goverment
+                            .menu-checked__form
+                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                input(type="checkbox" id="Nonprofit") 
+                                label(for="Nonprofit") Nonprofit
+                            .menu-checked__form
+                                <i class="fa fa-square-o" aria-hidden="true"></i>
+                                input(type="checkbox" id="Other") 
+                                label(for="Other") Other
+                .form-elements_right 
+                    .form-elements__field
+                        form.form-position(action="/")
+                            input.input-right(type="text" placeholder="Pick desired amenities")
+                            a(href="#")
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    .form-elements__text-field.__header-field
+                        form(action="/")
+                            .text-field__header 
+                                label.text-field__name(for="picked") Multiline amenities picked
+                            .text-field__button-area
+                                a(href="#") 
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                .button-link_active
+                                    input(type="submit" value="Free parking")
+                                .button-link
+                                    input(type="submit" value="Pool")
+                                .button-link
+                                    input(type="submit" value="Kitchen")
+                                .button-link
+                                    input(type="submit" value="Bathroom")
+                                .button-link
+                                    input(type="submit" value="Pet-frienly")
+                                .button-link
+                                    input(type="submit" value="Free Wi-Fi")
+                                .button-link
+                                    input(type="submit" value="Gym")
+                                .button-link
+                                    input(type="submit" value="Breakfast")
+                    .form-elements__text-field-button.__header-field_down
+                        form(action="/")
+                            .text-field__header 
+                                label.text-field__name(for="picked") Amentities
+                            .text-field__button-area-down
+                                .button-link
+                                    input(type="submit" value="Gym")
+                                .button-link
+                                    input(type="submit" value="Breakfast")
+                                .button-search
+                                    label(for="search") 
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    input(type="text" id="search" placeholder="People, places, events")
+                                .form-elements__menu
+                                    .menu-checked__form
+                                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                                        input(type="checkbox" id="Bathroom") 
+                                        label(for="Bathroom") Bathroom
+                                    .menu-checked__form_active-select.menu-checked__form
+                                        span.background.background_active
+                                            <i class="fa fa-check-square" aria-hidden="true"></i>
+                                        input.input_active(type="checkbox" id="Breakfast" checked) 
+                                        label(for="Breakfast") Breakfast
+                                    .menu-checked__form_active-select.menu-checked__form
+                                        span.background.background_active
+                                            <i class="fa fa-check-square" aria-hidden="true"></i>
+                                        input.input_active(type="checkbox" id="Gym" checked) 
+                                        label(for="Gym") Gym
+                                    .menu-checked__form
+                                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                                        input(type="checkbox" id="Free parking") 
+                                        label(for="Free parking") Free parking
+                                    .menu-checked__form
+                                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                                        input(type="checkbox" id="Free Wi-Fi") 
+                                        label(for="Free Wi-Fi") Free Wi-Fi
+                                    .menu-checked__form.br
+                                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                                        input(type="checkbox" id="Pet-friendly") 
+                                        label(for="Pet-friendly") Pet-friendly
+                                    <!-- WHY THIS TAG DOENS WORK? -->
+                                    hr.hr
+                                    <!-- WHY THIS TAG DOENS WORK? -->
+                                    .menu-checked__form
+                                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                                        input(type="checkbox" id="Paper") 
+                                        label(for="Paper") I don't need a toilet paper
+                                    .menu-checked__form
+                                        <i class="fa fa-square-o" aria-hidden="true"></i>
+                                        input(type="checkbox" id="wake") 
+                                        label(for="wake") Please wake me up at <span> Set time </span>  
+                                                                  
+        script(src='./main.js')

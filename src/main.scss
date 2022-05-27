@@ -1,0 +1,321 @@
+@font-face{
+	font-family: Manrope;
+	font-display: swap;
+	src: url("../src/fonts/Manrope-Bold.woff2") format("woff2"), url("../src/fonts/Manrope-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: Manrope;
+	font-display: swap;
+	src: url("../src/fonts/Manrope-Bold.woff2") format("woff2"), url("../src/fonts/Manrope-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: Manrope;
+	font-display: swap;
+	src: url("../src/fonts/Manrope-Regular.woff2") format("woff2"), url("../src/fonts/Manrope-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: Manrope;
+	font-display: swap;
+	src: url("../src/fonts/Manrope-Regular.woff2") format("woff2"), url("../src/fonts/Manrope-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@import "nullstyle.scss";
+html, 
+body {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	overflow: hidden;
+}
+input {
+	outline: none;
+}
+.form-elements {
+    background: #ffffff;
+	margin-top: 25px;
+
+    &__container {
+        padding: 0 500px;
+		display: flex;
+    }
+    &__text-field{
+        display: block;
+        max-width: 320px;
+        margin-bottom: 40px;
+    }
+	&_left {
+		margin-right: 80px;
+	}
+	&__menu {
+		position: relative;
+	}
+}
+.text-field{
+    &__header{
+		position: absolute;
+		display: block;
+		background-color: #ffffff;
+		padding: 2px 4px;
+		top: -13px;
+		left: 8px;
+    }
+    &__input {
+        padding: 13px 66px 13px 15px;
+        border: 1px solid #A1A1A1;
+		border-radius: 8px;
+		&:-webkit-input-placeholder {
+            font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.0168em;
+			color: #000000;
+        }
+        &:-moz-placeholder {
+            font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.0168em;
+			color: #000000;
+        }
+        &-active{
+            padding: 13px 66px 13px 15px;
+            border: 1.5px solid #5096F1;
+            border-radius: 8px; 
+			&::-webkit-input-placeholder {
+				font-size: 16px;
+				line-height: 150%;
+				letter-spacing: 0.0168em;
+				color: #000000;
+			}
+			&:-moz-placeholder {
+				font-size: 16px;
+				line-height: 150%;
+				letter-spacing: 0.0168em;
+				color: #000000;
+			}
+
+        }
+    }
+	&__name {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 130%;
+		letter-spacing: 0.03em;
+		color: #000000;
+	}
+	&__button-area{
+		padding: 12px 128px 12px 12px;
+        border: 1px solid #A1A1A1;
+		border-radius: 8px;
+		display: flex;
+		flex-wrap: wrap;
+		&-down {
+			padding: 12px 0px 12px 12px;
+			border: 1px solid #A1A1A1;
+			border-radius: 8px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
+.__header-field{
+	position: relative;
+	max-width: 460px;
+	margin-bottom: 8px;
+	&_down {
+		position: relative;
+		max-width: 460px;
+		margin-top: 39px;		
+	}
+}
+.menu-checked{
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+	border-radius: 12px;
+	&__form{
+		position: relative;
+		padding: 12px 8px;
+		& span {
+			color: #1672EC;
+			font-weight: 700;
+		}
+		& input {
+			margin: 8px 21px 8px 8px;
+			background: #818181;
+			opacity: 0;
+		}
+		&_active{
+			padding: 12px 8px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.005em;
+			color: #000000;
+			& input {
+				margin: 8px 21px 8px 8px;
+				background: #818181;
+			}
+			&-select{
+				display:flex;
+				align-items: center	;
+				padding: 12px 8px;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 150%;
+				letter-spacing: 0.005em;
+				& input {
+					margin: 8px 21px 8px 8px;
+					background: #818181;
+				}
+			}	
+		}
+	}
+}
+.button-link {
+	background: #E0E0E0;
+	border-radius: 4px;
+	margin: 6px 6px;
+	letter-spacing: 0.005em;
+		& input {
+			display: inline-block;
+			color: #000000;
+			padding: 5px 14px;
+			background: #E0E0E0;
+			border-radius: 4px;
+			letter-spacing: 0.005em;
+			cursor: pointer;
+	}
+	&_active{
+		border-radius: 4px;
+		margin: 6px 6px;
+		letter-spacing: 0.005em;
+		& input {
+			color: #E0E0E0;
+			background: #616161;
+			display: inline-block;
+			padding: 5px 14px;
+			border-radius: 4px;
+			letter-spacing: 0.005em;
+			cursor: pointer;
+		}
+	}
+}
+.button-search{
+	position: relative;
+	width: 436px;
+	margin: 6px 6px;
+	border: 1px solid #E0E0E0;
+	border-radius: 8px;
+	overflow: hidden;
+	padding: 8px 300px 8px 48px;
+}
+.automotive_active {
+	display: flex;
+	flex-direction: column;
+	&-select {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 142%;
+		letter-spacing: 0.0168em;
+		color: #1672EC;
+	}
+}
+.form-position {
+	position: relative;
+	& a {
+		color: #616161;
+	}
+	& a :active {
+		color: #1672EC;
+	}
+}
+.input-right {
+	padding: 13px 290px 13px 15px;
+	border: 1px solid rgba(31, 32, 65, 0.5);
+	border-radius: 8px; 
+	margin-bottom: 40px;
+	&::-webkit-input-placeholder {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.0168em;
+		color: #000000;
+	}
+	&:-moz-placeholder {
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.0168em;
+		color: #000000;
+	}
+}
+.fa-caret {
+	&-down{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	&-up{
+		position: absolute;
+		color: #1672EC;
+		top: 15px;
+		right: 15px;
+	}
+}
+.fa-square-o {
+	position: absolute;
+	color: #818181;
+	top: 18.5px;
+	left: 15.5px;
+}
+.fa-search {
+	color: #818181;
+	position: absolute;	
+	top: 9px;
+	left: 15px;
+}
+.fa-times {
+	position: absolute;	
+	top: 60px;
+	right: 17px;
+	color: #D4B011;
+	&:active {
+		color: #818181;	
+	}
+}
+.fa-check-square {
+	position: absolute;
+	color: #818181;
+	top: 4px;
+	left: 5px;
+	color:#0F56B3;
+}
+.background {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	background: rgba(197, 220, 250, 0.5);
+	border-radius: 4px;
+	margin-left: 3px;
+	&_active{
+		margin-right: 15px;
+	}
+}
+.input_active {
+	position: absolute;
+}
+.hr::before {
+	content: "";
+	position: absolute;
+	top: 320px;
+	left: 0;
+	width: 436px;
+	border: 1px solid #E0E0E0;;
+}
+.br{
+	margin-bottom: 20px;
+}
